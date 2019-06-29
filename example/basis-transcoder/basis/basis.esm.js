@@ -1,0 +1,1 @@
+import{p as s,b as r}from"./p-4ca93106.js";s().then(s=>r([["p-hwqbpuih",[[1,"basis-transcoder",{basisSrc:[1,"basis-src"],height:[2],width:[2]}],[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],{resourcesUrl:s}));

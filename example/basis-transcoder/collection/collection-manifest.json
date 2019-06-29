@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "components/my-component/my-component.js",
+    "components/basis-transcoder/basis-transcoder.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.0.7",
+    "typescriptVersion": "3.5.2"
+  },
+  "collections": [],
+  "bundles": []
+}
