@@ -160,7 +160,7 @@ export class BasisTranscoder {
 
         /**
          * Checks if basis files starts transcoding properly
-         * 
+         *
          * whene error occurs close the basis file properly
          */
         if (!basisFile.startTranscoding()) {
@@ -175,14 +175,14 @@ export class BasisTranscoder {
 
     /**
      * Start processing the transcoding
-     * 
-     * @param basisFile .basis file  
+     *
+     * @param basisFile .basis file
      */
     _startTranscoding(basisFile) {
 
         /**
          * Selects the apt format to transcode to
-         * 
+         *
          * NOTE:// don't know much about these formats
          */
         const format = BASIS_FORMATS.cTFBC1;
@@ -197,7 +197,7 @@ export class BasisTranscoder {
 
         /**
          * Actual transcoding of the image
-         * puts the transcoded image data in 
+         * puts the transcoded image data in
          * the array created for the image size
          */
         if (!basisFile.transcodeImage(dst, 0, 0, format, 1, 0)) {
@@ -259,9 +259,9 @@ export class BasisTranscoder {
     }
 
     /**
-     * 
+     *
      * Checks if the provided basis file is a valid one
-     * 
+     *
      * @param basisFile BasisFile
      * @param basisFileOptions { width, height and other params }
      */
@@ -287,14 +287,9 @@ export class BasisTranscoder {
     render() {
         return (
             <div>
-                <img ref={(el) => this.image = el as HTMLImageElement} src={this.basisSrc}></img>
-
                 <canvas id="canvas">
-
                 </canvas>
             </div>
         );
     }
-
-
 }

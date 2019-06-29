@@ -14,20 +14,6 @@ export namespace Components {
     'height': number;
     'width': number;
   }
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
 }
 
 declare global {
@@ -38,15 +24,8 @@ declare global {
     prototype: HTMLBasisTranscoderElement;
     new (): HTMLBasisTranscoderElement;
   };
-
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
   interface HTMLElementTagNameMap {
     'basis-transcoder': HTMLBasisTranscoderElement;
-    'my-component': HTMLMyComponentElement;
   }
 }
 
@@ -56,24 +35,9 @@ declare namespace LocalJSX {
     'height'?: number;
     'width'?: number;
   }
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
 
   interface IntrinsicElements {
     'basis-transcoder': BasisTranscoder;
-    'my-component': MyComponent;
   }
 }
 
