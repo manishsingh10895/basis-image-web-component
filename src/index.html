@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/basis.esm.js"></script>
+  <script nomodule src="/build/basis.js"></script>
+
+</head>
+
+<body>
+
+  <basis-transcoder basis-src="apple.basis" height=1000 width=1024></basis-transcoder>
+
+  <my-component first="askdjasd" ></my-component>
+
+  Select a file
+  <input type="file" id="file">
+
+
+  <script>
+    window.addEventListener('load', (e) => {
+      let fileInput = document.getElementById('file');
+
+      fileInput.addEventListener('change', (e) => {
+        console.log(e)
+        console.log(e.target.files);
+      })
+    })
+  </script>
+</body>
+
+</html>
