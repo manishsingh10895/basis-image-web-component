@@ -6,19 +6,19 @@ A webcomponent to render and display a basis image file.
 
 ### Setup
 
-Include the following scripts in your HTML document to start using the `basis-image`
-webcomponent.
+Include the following scripts in your HTML document to start using the `basis-transcoder`
+web component.
 
 ```
-  <script src="https://cdn.8bitlabs.tech/basis_transcoder.wasm/basis.esm.js" type="module"></script>
-  <script src="https://cdn.8bitlabs.tech/basis_transcoder.wasm/basis.js" nomodule ></script>
+  <script src="https://cdn.8bitlabs.tech/basis.esm.js" type="module"></script>
+  <script src="https://cdn.8bitlabs.tech/basis.js" nomodule ></script>
 ```
 
 Now your all set to use basis textures on your website.
 
 ### Usage
 
-To display a .basis file include and use the web content using the `basis-transcoder`
+To display a .basis file follow the setup above and use the web component using the `basis-transcoder`
 web component tag.
 
 ```
